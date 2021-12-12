@@ -3,7 +3,7 @@ const express = require('express');
 // node package used to send 
 const path = require('path');
 // fetch data 
-const api = require('./routes/routeIndex.js');
+const api = require('./routes/index.js');
 
 // deployment port
 const PORT = process.env.port || 3001;
@@ -16,24 +16,28 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', api);
 
-// crates static folder to send static front-end indexes
+// crates static folder to send static front-end files
 app.use(express.static('public'));
 
 // create end points
+
 // GET Route for notes page
 app.get('/notes', (req, res) =>
 
-  res.sendFile(path.join(__dirname, '/public/pages/notes.html'))
+  res.sendFile(path.join(__dirname, '/public/notes.html'))
 
 );
 
-// GET Route for landing (*)
-// Wildcard route to direct users back to landing page
+// GET Route for landing (*) -- catch all
 app.get('*', (req, res) =>
+
   res.sendFile(path.join(__dirname, 'public/index.html'))
+
 );
 
 // Listen on port
 app.listen(PORT, () =>
+
   console.log(`App listening at http://localhost:${PORT} 🚀`)
+
 );
