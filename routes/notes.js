@@ -1,6 +1,6 @@
 
 const notes = require('express').Router();
-const fs = require('fs');
+const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 // GET Route for retrieving all the notes
 notes.get('/api/notes', (req, res) => {
@@ -12,23 +12,29 @@ notes.get('/api/notes', (req, res) => {
 
 });
 
-// POST Route for a new UX/UI note
+// POST Route for submitting note
 notes.post('/api/notes', (req, res) => {
 
-  console.info(`${req.method} request received to add a tip`);
+  console.info(`${req.method} request received to add a note`);
 
   console.log(req.body);
 
   const { title, text } = req.body;
 
-  if (req.body) {
+  if (title && text) {
     const newNote = {
       title,
       text,
     };
 
     readAndAppend(newNote, './db/notes.json');
-    res.json(`Tip added successfully 🚀`);
+
+    const response = {
+      status: '`Tip added successfully 🚀`',
+      body: newNote,
+    };
+
+    res.json(response);
 
   } else {
 
