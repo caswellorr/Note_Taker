@@ -2,11 +2,6 @@
     {
         "title": "Grocery List",
         "text": "grab some apples!",
-        "note_id": "4a1adca1-bd8d-4bb2-8fa6-8aa26c44ae41"
-    },
-    {
-        "title": "Errands",
-        "text": "- Target\n-  Walmart\n- Trader Joe's",
-        "note_id": "1a2fa857-bc66-4ed0-824a-4d950d8dcf72"
+        "id": "4a1adca1-bd8d-4bb2-8fa6-8aa26c44ae41"
     }
 ]
