@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', api);
 
-// crates static folder to send static front-end files
+// creates static folder to send static front-end files
 app.use(express.static('public'));
 
 // create end points
