@@ -1,15 +1,26 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Link : https://warm-taiga-44014.herokuapp.com/",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caswellorr/Note_Taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/caswellorr/Note_Taker/issues"
+  },
+  "homepage": "https://github.com/caswellorr/Note_Taker#readme"
 }
