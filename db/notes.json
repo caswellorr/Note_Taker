@@ -1,7 +1,27 @@
 [
     {
-        "title": "Grocery List",
-        "text": "grab some apples!",
-        "id": "4a1adca1-bd8d-4bb2-8fa6-8aa26c44ae41"
+        "title": "Groceries",
+        "text": "Grab Apples, Bananas, and Oranges",
+        "note_id": "b6da9403-620f-447f-b62f-87fa8e4096bf"
+    },
+    {
+        "title": "Finish Assignment",
+        "text": "Finish the assignment",
+        "note_id": "267e5064-bd0e-43de-aba8-4aa56a2154e5"
+    },
+    {
+        "title": "Check in with Mom",
+        "text": "call mom",
+        "note_id": "239f68df-ef0e-4f74-826c-bd14ce4d545d"
+    },
+    {
+        "title": "Book Flight",
+        "text": "book flight to Salt Lake City",
+        "note_id": "6a0ddc25-25a1-4a62-b27b-979eb681aa1e"
+    },
+    {
+        "title": "Develop a Resume",
+        "text": "create a new resume",
+        "note_id": "24c473e4-c1b9-42e6-98ef-66c471f4e9ca"
     }
 ]
